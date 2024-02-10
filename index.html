@@ -6,23 +6,30 @@
 		
 	</title>
 	<style type="text/css">
+		.container{
+			position: absolute;
+			left:50%;
+			top:100%;
+			transform: translate (-50%,-50%);
+		}
+
+		
 		#angka{
 			width: 300px;
 	height:700px;
 		}
 		div input{
-			width: 50px;
-	height:50px;
+			width: 70px;
+	height:70px;
 	margin-bottom: 10px;
+		}
+		#tampilan{
+			font-size:70px;
 		}
 	</style>
 </head>
 <body>
-	<table id="tabel">
-		<tr>
-			<td></td>
-		</tr>
-	</table>
+	<div class="container">
 
 	<p id="tampilan">
 		
@@ -47,6 +54,7 @@
 <input type="button" name="hapus" onclick="hapus()" value="hapus">
 <input type="button" name="C" onclick="C()" value="C">
 </div>
+	</div>
 <script type="text/javascript" src="script.js"></script>
 </body>
 </html>
